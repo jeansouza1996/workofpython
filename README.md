@@ -55,6 +55,23 @@ Aula (01/03/2019)
                 Na versao 2.6 houve implementação do JSON e bibliotecas para multiprocessamento. 
                 Na versão 2 era possivel comparar uma variavel texto com variavel numerica. 
 
+-------------------------------------------------------------------------------------------------------------------
+
+tipos primitivos python - 
+
+int - para números inteiros
+str - para conjuntos de caracteres
+bool -  armazena true ou false
+float(32bits)/double(64bits) - numeros decimais 
+
+tipos compostos
+
+tuplas,listas,dicionarios e conjuntos
+
+tupla - semelhante ao tipo list, porém, imutavel
+dic - para agrupar elementos que serao recuperados por uma
+list - para agrupar um conjunto de elementos
+
 
 
 
