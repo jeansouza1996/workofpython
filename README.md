@@ -74,6 +74,69 @@ list - para agrupar um conjunto de elementos
 
 
 
+exemplos de codigo do professor = https://www.onlinegdb.com/r1hzaBJvV
+                          lists=  https://www.onlinegdb.com/B1sbW81DE
+                          turple= https://www.onlinegdb.com/rJrzz8JDE
+                          sets=   https://www.onlinegdb.com/HJ5x7UyPV
+                dictionaries=     https://www.onlinegdb.com/ryn_m8kPN
+
+
+
+exemplos de conversores: 
+
+convertendo string em data
+
+**********
+ from datetime import datetime                                  
+                                                               
+str_date = '11/07/2018'                                        
+                                                               
+date = datetime.strptime(str_date, '%d/%m/%Y').date()   
+
+print(date, type(date))
+
+str_date = '2018-07-11'
+
+date = datetime.strptime(str_date, '%Y-%m-%d').date()
+
+print(date, type(date))
+**********
+
+
+Convertendo String em numero:
+
+**********
+num = input("Introduza um numero") #'123'
+str(num)
+print(num)
+**********
+
+***************
+
+# Python code to demonstrate Type conversion 
+# using int(), float() 
+  
+# initializing string 
+s = "10010"
+  
+# printing string converting to int base 2 
+c = int(s,2) 
+print ("After converting to integer base 2 : ", end="") 
+print (c) 
+  
+# printing string converting to float 
+e = float(s) 
+print ("After converting to float : ", end="") 
+print (e) 
+
+****************
+
+
+
+
+
+
+
 
 
 
