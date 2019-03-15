@@ -136,24 +136,30 @@ Else If.
 a = 33
 b = 33
 if b > a:
-  print("b is greater than a")
+  print("B é maior do que A")
 elif a == b:
-  print("a and b are equal")
+  print(" A e B é Igual")
 
 Exemplos: https://www.w3schools.com/python/python_conditions.asp
 
+While.
+
+i = 1
+while i < 6:
+  print(i)
+  i += 1
+  
+Exemplos: https://www.w3schools.com/python/python_while_loops.asp
+
+************************************************************
+Os Exemplos de Else If,Input e Output será demonstrado abaixo nos exercicios. 
 
 
 
 
 
 
-
-
-
-
-
-Exercício 2 - Aula 08/03/2019
+Exercício 2 
 
 salarioAtual = float(input('Digite o seu salário \n '))
 if salarioAtual <= 280 :
@@ -176,3 +182,7 @@ print('O porcentual de aumento foi de %.0f:' % porcentagemDoAumento)
 print('O valor do aumento foi de : %.2f' % valorAumento)
 print('O seu novo salário será de R$ : %.2f' % salarioReajustado)
 
+
+************************************************************
+
+Aula (15/03/2019)
