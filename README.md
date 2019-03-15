@@ -56,7 +56,7 @@ Aula (01/03/2019)
                 Na versão 2 era possivel comparar uma variavel texto com variavel numerica. 
 
 -------------------------------------------------------------------------------------------------------------------
-
+Aula (08/03/2019)
 tipos primitivos python - 
 
 int - para números inteiros
@@ -82,13 +82,11 @@ exemplos de codigo do professor = https://www.onlinegdb.com/r1hzaBJvV
 
 
 
-Aula (08/03/2019)
-
 exemplos de conversores: 
 
 convertendo string em data
 
-**********
+**************************************************************
  from datetime import datetime                                  
                                                                
 str_date = '11/07/2018'                                        
@@ -102,18 +100,15 @@ str_date = '2018-07-11'
 date = datetime.strptime(str_date, '%Y-%m-%d').date()
 
 print(date, type(date))
-**********
-
+************************************************************
 
 Convertendo String em numero:
 
-**********
 num = input("Introduza um numero") #'123'
 str(num)
 print(num)
-**********
 
-***************
+************************************************************
 
 # Python code to demonstrate Type conversion 
 # using int(), float() 
@@ -129,17 +124,11 @@ print (c)
 # printing string converting to float 
 e = float(s) 
 print ("After converting to float : ", end="") 
-print (e) 
-
-****************
+print (e)
 
 Exemplos de conversões
 https://blog.education-ecosystem.com/python-como-transformar-string-para-float-ou-int/
 
-
-
-
-
-
+************************************************************
 
 
