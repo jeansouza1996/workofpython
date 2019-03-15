@@ -130,5 +130,26 @@ Exemplos de conversões
 https://blog.education-ecosystem.com/python-como-transformar-string-para-float-ou-int/
 
 ************************************************************
+Exercício 2 - 
 
+salarioAtual = float(input('Digite o seu salário \n '))
+if salarioAtual <= 280 :
+    valorAumento = salarioAtual * 0.20
+    salarioReajustado = valorAumento + salarioAtual
+elif salarioAtual > 280 and salarioAtual <= 700 :
+    valorAumento = salarioAtual * 0.15
+    salarioReajustado = valorAumento + salarioAtual
+elif salarioAtual > 700 and salarioAtual <= 1500 :
+    valorAumento = salarioAtual * 0.10
+    salarioReajustado = valorAumento + salarioAtual 
+elif salarioAtual > 1500 :
+    valorAumento = salarioAtual * 0.05
+    salarioReajustado = valorAumento + salarioAtual
+
+porcentagemDoAumento = ((salarioReajustado / salarioAtual) - 1) * 100
+
+print('O salário atual deste funcionário é de R$ : %.2f' % salarioAtual)
+print('O porcentual de aumento foi de %.0f:' % porcentagemDoAumento)
+print('O valor do aumento foi de : %.2f' % valorAumento)
+print('O seu novo salário será de R$ : %.2f' % salarioReajustado)
 
