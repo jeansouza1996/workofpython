@@ -130,7 +130,7 @@ Exemplos de conversões
 https://blog.education-ecosystem.com/python-como-transformar-string-para-float-ou-int/
 
 ************************************************************
-Exercício 2 - 
+Exercício 2 - Aula 08/03/2019
 
 salarioAtual = float(input('Digite o seu salário \n '))
 if salarioAtual <= 280 :
