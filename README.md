@@ -126,10 +126,33 @@ e = float(s)
 print ("After converting to float : ", end="") 
 print (e)
 
-Exemplos de conversões
-https://blog.education-ecosystem.com/python-como-transformar-string-para-float-ou-int/
+Exemplos: https://blog.education-ecosystem.com/python-como-transformar-string-para-float-ou-int/
 
 ************************************************************
+Fluxos de Controle
+
+Else If.
+
+a = 33
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+
+Exemplos: https://www.w3schools.com/python/python_conditions.asp
+
+
+
+
+
+
+
+
+
+
+
+
 Exercício 2 - Aula 08/03/2019
 
 salarioAtual = float(input('Digite o seu salário \n '))
