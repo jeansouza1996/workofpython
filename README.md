@@ -154,10 +154,11 @@ Exemplos: https://www.w3schools.com/python/python_while_loops.asp
 ************************************************************
 Os Exemplos de Else If,Input e Output será demonstrado abaixo nos exercicios. 
 
+Exercício 1
 
-
-
-
+temperaturaCelsius = float(input('Digite a temperatura em graus Celsius \n '))
+temperaturaFarenheit = (1.8 * temperaturaCelsius) + 32
+print('O valor em Farenheit é de : %.2f' % temperaturaFarenheit)
 
 Exercício 2 
 
