@@ -82,6 +82,8 @@ exemplos de codigo do professor = https://www.onlinegdb.com/r1hzaBJvV
 
 
 
+Aula (08/03/2019)
+
 exemplos de conversores: 
 
 convertendo string em data
@@ -131,8 +133,8 @@ print (e)
 
 ****************
 
-
-
+Exemplos de conversões
+https://blog.education-ecosystem.com/python-como-transformar-string-para-float-ou-int/
 
 
 
