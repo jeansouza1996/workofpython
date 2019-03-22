@@ -188,6 +188,12 @@ print('O seu novo salário será de R$ : %.2f' % salarioReajustado)
 
 Aula (15/03/2019)
 
+fatorial:
+https://trinket.io/python/dc4e7108b6
+
+fatorial usando funções anonimas:
+
+
 circulo:
 https://trinket.io/python/cee3b62314
 
