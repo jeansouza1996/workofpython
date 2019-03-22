@@ -187,3 +187,12 @@ print('O seu novo salário será de R$ : %.2f' % salarioReajustado)
 ************************************************************
 
 Aula (15/03/2019)
+
+circulo:
+https://trinket.io/python/cee3b62314
+
+retangulo:
+https://trinket.io/python/feaa7f58d6
+
+base:
+https://trinket.io/python/b49c0ef5e0
