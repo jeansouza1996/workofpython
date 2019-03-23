@@ -193,6 +193,7 @@ https://trinket.io/python/dc4e7108b6
 
 fatorial usando funções anonimas:
 
+https://trinket.io/python/8a68f6f8de
 
 circulo:
 https://trinket.io/python/cee3b62314
