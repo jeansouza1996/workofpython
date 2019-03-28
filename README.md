@@ -203,3 +203,18 @@ https://trinket.io/python/feaa7f58d6
 
 base:
 https://trinket.io/python/b49c0ef5e0
+
+************************************************************
+Aula (22/03/2019)
+
+Tipos de escopo:
+
+Exemplo do professor
+
+https://www.onlinegdb.com/HJAszPl_E
+
+Exemplo criado pela equipe 
+
+https://trinket.io/python/7faea8d992
+
+
