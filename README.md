@@ -217,4 +217,67 @@ Exemplo criado pela equipe
 
 https://trinket.io/python/7faea8d992
 
+************************************************************
+O controle de memoria é realizado pelo proprio Python.
 
+E as ferramentas para analise do código e calculo de métricas são:
+
+PEP 8 Python Enhancement Proposals é uma ferramenta que analisa seu codigo conforme as convenções padrões da PEP 8.
+
+Pyflakes ele analisa erros de logica e sintaxe e não as conveções.
+
+Codepaths analisa a complexidade ciclomatica do código com base nas métricas McCabe.
+
+************************************************************
+
+Resultado a verificação de codigo realizado pelo PEP8 Online
+
+Check results
+=============
+
+W291:9:16:trailing whitespace
+E221:10:10:multiple spaces before operator
+E221:13:10:multiple spaces before operator
+E221:16:10:multiple spaces before operator
+E221:19:10:multiple spaces before operator
+W291:22:32:trailing whitespace
+
+Code
+=============
+import moment
+input1 = input("insira uma data (DD/MM/YYYY)")
+print("Escolha o metodo de visualizacao")
+print("1: DD/MM/YYYY.   ")
+print("2: MM/DD/YYYY.   ")
+print("3: DD - MM - YYYY.   ")
+print("4: Dia, Mes e Ano separado")
+input2 = int(input())
+if input2 == 1: 
+    date1  = moment.date(input1, "DD/MM/YYYY")
+    print(date1.format("DD/MM/YYYY"))
+elif input2 == 2:
+    date1  = moment.date(input1, "DD/MM/YYYY")
+    print(date1.format("MM/DD/YYYY"))
+elif input2 == 3:
+    date1  = moment.date(input1, "DD/MM/YYYY")
+    print(date1.format("DD - MM - YYYY"))
+elif input2 == 4:
+    date1  = moment.date(input1, "DD/MM/YYYY")
+    print(date1.format("DD"))
+    print(date1.format("MM"))
+    print(date1.format("YYYY"))    
+    
+Codigo usado para ser textado:
+
+https://trinket.io/python/3ac01c8dc8
+
+************************************************************
+
+Aula (29/03/2019)
+
+Código utilizado aplicando biblioteca:
+
+
+https://trinket.io/python/3ac01c8dc8
+
+Continuar pesquisar um framwork e uma aplicação simples. 
