@@ -287,3 +287,13 @@ https://www.youtube.com/watch?v=QjtW-wnXlUY
 Código utilizando o framework flasK
 
 https://trinket.io/python/fff5988bc0
+
+Código utilizado arquivos independentes.
+
+Arquivos Python:
+https://trinket.io/python/33f8134160
+
+Arquivo HTML
+http://tpcg.io/nKZZFY
+
+************************************************************
