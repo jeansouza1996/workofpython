@@ -297,3 +297,7 @@ Arquivo HTML
 http://tpcg.io/nKZZFY
 
 ************************************************************
+
+Documentação do Tkinter
+
+https://docs.python.org/3/library/tk.html
