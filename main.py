@@ -3,7 +3,6 @@ from flask_restful import Api, Resource, reqparse
 
 app = Flask(__name__)
 api = Api(app)
-
 users = [
     {
         "name": "Robert",
@@ -21,6 +20,7 @@ users = [
         "occupation": "Desenvolvedor"
     }
 ]
+
 
 class User(Resource):
 
@@ -71,11 +71,12 @@ class User(Resource):
         users.append(user)
         return user, 201
 
-    def delete(self, nome):
+    def delete(self, name):
 
         global users
         users = [user for user in users if user["name"] != name]
         return "{} está deletado.".format(name), 200
+
 
 api.add_resource(User, "/user/<string:name>")
 app.run(debug=True)

@@ -1,48 +1,59 @@
-from tkinter import *
+from tkinter import*
 
-"""
-class Application:
-    def __init__(self, master=None):
-        self.widget1 = Frame(master)
-        self.widget1.pack()
-        self.msg = Label(self.widget1, text="Usando uma API")
-        self.msg["font"] = ("Verdana", "10", "italic", "bold")
-        self.msg.pack()
-        self.sair = Button(self.widget1)
-        self.sair["text"] = "Sair"
-        self.sair["font"] = ("Calibri", "10")
-        self.sair["width"] = 5
-        self.sair["command"] = self.widget1.quit
-        self.sair.pack()
-        root.title("Cadastro de Funcionários")
+class principal:
+        def __init__(self):
 
-root = Tk()
-Application(root)
-root.mainloop()
+            janela_principal = Tk()
+            janela_principal.geometry("700x575+50+50")
+            janela_principal.title("Cadastro de Funcionários")
+            #janela_principal.overrideredirect(True)
 
-"""
+            txtNDocumento   = StringVar()
+            txtAssunto      = StringVar()
+            txtDQFR         = StringVar()
 
-#Aprendendo a criar uma interface
+            a = Label(janela_principal)
+            a.pack(side=TOP)
 
-root = Tk()
+            b = Label(janela_principal)
+            b.pack(side=BOTTOM)
 
-root.geometry("1350x750")
-root.title("Sistema")
-root.configure(background="gray")
+            b1 = Label(janela_principal)
+            b1.pack()
 
-Top = Frame(root, width=1350, height=100, bd=9, relief="flat")
-Top.pack(side=TOP)
+            c = Label(janela_principal)
+            c.pack(pady=14)
+
+            d = Label(b1, text="Nome:   ", font=("Gentium Basic", 11))
+            d.grid(row=0, column=0, sticky=N)
+            d1 = Entry(b1, width=20, textvariable=txtNDocumento, font=("Gentium Basic", 11), justify=CENTER)
+            d1.grid(row=1, column=0)
+            e = Label(b1, text="Idade:   ", font=("Gentium Basic", 11))
+            e.grid(row=0, column=1, sticky=N)
+            e1 = Entry(b1, width=20, textvariable=txtAssunto, font=("Gentium Basic", 11))
+            e1.grid(row=1, column=1)
+
+            f = Label(b1, text="Ocupação:", font=("Gentium Basic", 11))
+            f.grid(row=0, column=2, sticky=N)
+            f1 = Entry(b1, width=20, textvariable=txtDQFR, font=("Gentium Basic", 11))
+            f1.grid(row=1, column=2)
+
+            g = Button(b1, text="ADICIONAR", width=12, height=2, relief=FLAT,  activebackground="#4169E1", activeforeground="WHITE", background="#4169E1", foreground="WHITE")
+            g.grid(row=0, column=3, rowspan=2, padx=15)
+            rolagem = Scrollbar(c)
+            rolagem.grid(row=0, column=1, sticky=N+S)
+            caixa_exibição = Listbox(c, relief=SOLID, border=1, width=80, height=25, font=("Gentium Basic", 11))
+            caixa_exibição.grid(row=0, column=0)
 
 
-Left = Frame(root, width=900, height=640, bd=9, relief="flat")
-Left.pack(side=LEFT)
-Left.configure(background="darkgrey")
+            #for i in range(100):
+            #    caixa_exibição.insert(END, i)
 
-Right = Frame(root, width=445, height=640, bd=9, relief="flat")
-Right.pack(side=RIGHT)
-Right.configure(background="yellow")
+            # attach listbox to scrollbar
+            caixa_exibição.config(yscrollcommand=rolagem.set)
+            rolagem.config(command=caixa_exibição.yview)
 
-lblTitulo = Label(Top, font=("Arial", 20, "bold"), text="CRUD Funcionários")
-lblTitulo.grid(row=0, column=0)
+            janela_principal.mainloop()
 
-root.mainloop()
+
+principal()
