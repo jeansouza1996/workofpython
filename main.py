@@ -28,7 +28,7 @@ class User(Resource):
         if name is None:
             return users, 200
         for user in users:
-            if(name == user["name"]):
+            if name == user["name"]:
                 return user, 200
         return "Usuário não encontrado", 404
 
@@ -40,7 +40,7 @@ class User(Resource):
         args = parser.parse_args()
 
         for user in users:
-            if(name == user["name"]):
+            if name == user["name"]:
                 return "Usuário com o nome {} já existe".format(name), 400
         user = {
             "name": name,
@@ -59,7 +59,7 @@ class User(Resource):
         args = parser.parse_args()
 
         for user in users:
-            if(name == user["name"]):
+            if name == user["name"]:
                 user["age"] = args["age"]
                 user["occupation"] = args["occupation"]
                 return user, 200
