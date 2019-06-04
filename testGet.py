@@ -1,12 +1,16 @@
-import unittest
 import json
+import unittest
 import requests
 
 
-def test_get(self):
-    response = requests.get("http://127.0.0.1:5000/user/Jiraya")
-    u = json.loads(response.content)
+class TesteNome(unittest.TestCase):
+    def test_get(self):
+        response = requests.get("http://127.0.0.1:5000/user/Jiraya")
+        user_content = json.loads(response.content)
+        self.assertEqual("Jiraya", user_content['name'])
+        self.assertEqual(30, int(user_content['age']))
+        self.assertEqual("TI", user_content['occupation'])
 
-    self.assertEqual("Jiraya", u['name'])
-    self.assertEqual(30, int(u['age']))
-    self.assertEqual("TI", u['occupation'])
+
+if __name__ == '__main__':
+    unittest.main()

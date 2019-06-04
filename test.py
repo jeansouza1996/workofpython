@@ -10,6 +10,7 @@ rPost = requests.post("http://127.0.0.1:5000/")
 rGet = requests.get("http://127.0.0.1:5000/")
 """
 
+
 class TesteNome(unittest.TestCase):
 
     def test_delete(self):
