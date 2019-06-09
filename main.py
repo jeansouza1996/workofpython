@@ -1,9 +1,9 @@
 from flask import Flask
 from flask_restful import Api, Resource, reqparse
 
-app = Flask(__name__)
-api = Api(app)
-users = [
+APP = Flask(__name__)
+API = Api(APP)
+USERS = [
     {
         "name": "Robert",
         "age": 26,
@@ -26,8 +26,8 @@ class User(Resource):
 
     def get(self, name):
         if name is None:
-            return users, 200
-        for user in users:
+            return USERS, 200
+        for user in USERS:
             if name == user["name"]:
                 return user, 200
         return "Usuário não encontrado", 404
@@ -39,7 +39,7 @@ class User(Resource):
         parser.add_argument("occupation")
         args = parser.parse_args()
 
-        for user in users:
+        for user in USERS:
             if name == user["name"]:
                 return "Usuário com o nome {} já existe".format(name), 400
         user = {
@@ -48,7 +48,7 @@ class User(Resource):
             "occupation": args["occupation"]
         }
 
-        users.append(user)
+        USERS.append(user)
         return user, 201
 
     def put(self, name):
@@ -58,7 +58,7 @@ class User(Resource):
         parser.add_argument("occupation")
         args = parser.parse_args()
 
-        for user in users:
+        for user in USERS:
             if name == user["name"]:
                 user["age"] = args["age"]
                 user["occupation"] = args["occupation"]
@@ -68,15 +68,15 @@ class User(Resource):
             "age": args["age"],
             "occupation": args["occupation"]
         }
-        users.append(user)
+        USERS.append(user)
         return user, 201
 
     def delete(self, name):
 
-        global users
-        users = [user for user in users if user["name"] != name]
+        global USERS
+        USERS = [user for user in USERS if user["name"] != name]
         return "{} está deletado.".format(name), 200
 
 
-api.add_resource(User, "/user/<string:name>")
-app.run(debug=True)
+API.add_resource(User, "/user/<string:name>")
+APP.run(debug=True)
